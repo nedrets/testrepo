@@ -1,0 +1,63 @@
+// mixins.scss
+// Define custom mixins here
+
+// adds outline for debugging
+@mixin debug-bars($outline-color: color(wireframe, 500)) {
+    outline: 1px solid $outline-color;
+}
+
+// fills background for layout testing
+@mixin layout-color($fill-color: color(wireframe, 300)) {
+    background-color: $fill-color;
+}
+
+// adds outline, bg fill, and min-height for testing layouts
+@mixin layout-show($outline-color: color(wireframe, 900), $fill-color: color(wireframe, 300), $layout-height: 8) {
+    @include debug-bars($outline-color);
+    @include layout-color($fill-color);
+    min-height: $layout-height;
+}
+
+// omega reset
+@mixin omega-reset($nth) {
+    &:nth-child(#{$nth}) {
+        margin-right: flex-gutter();
+    }
+
+    &:nth-child(#{$nth}+1) {
+        clear: none;
+    }
+}
+
+// zero out padding and margins
+@mixin zero() {
+    margin: 0;
+    padding: 0;
+}
+
+// zero out list-style-type NOTE: Becareful with nested list styles
+@mixin zero-list() {
+    list-style-type: none;
+}
+// univeral panel styling
+@mixin panel() {
+    position: relative;
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+    border-top: 6px solid color(wireframe, 700);
+    border-radius: 1px;
+    box-shadow: -1px 0 2px 0 color(wireframe, black, 0.12) , 1px 0 2px 0 color(wireframe, black, 0.12) , 0 1px 1px 0 color(wireframe, black, 0.24);
+}
+
+/// Helper to size an element
+///
+/// @author Hugo Giraudel
+///
+/// @link http://www.sitepoint.com/sass-mixins-kickstart-project/
+///
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

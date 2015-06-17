@@ -1,0 +1,76 @@
+// layout-helpers.scss
+// Define layout helpers here: NOTE: prefixed with l-
+
+// full width
+.l-full {
+    width: 100%;
+}
+
+// floats
+// float left
+.l-pull-left {
+    float: left;
+    margin-bottom: rem(20);
+    margin-right: rem(20);
+}
+
+// float right
+.l-pull-right {
+    float: right;
+    margin-bottom: rem(20);
+    margin-left: rem(20);
+}
+
+// positioning
+// inspired from http://howtocenterincss.com/
+// NOTE: most use flexbox - be sure to check browser reqs: http://caniuse.com/#feat=flexbox.
+// most below classes are for parent elements. children must have 'flex' property set
+
+// both horizontally and vertically centered
+.l-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// horizontally: left, vertically: centered
+.l-left-centered {
+    display: flex;
+    align-items: center;
+}
+
+// horizontally: left, vertically: bottom
+.l-left-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+// horizontally: centered, vertically: top
+.l-center-top {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// horizontally: centered, vertically: bottom
+.l-center-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+// horizontally: right, vertically: top
+.l-right-top{
+    margin-left: auto;
+}
+// horizontally: right, vertically: centered
+.l-right-centered{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+// horizontally: right, vertically: bottom
+.l-right-bottom{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}

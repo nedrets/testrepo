@@ -1,0 +1,30 @@
+// grid-helpers.scss
+// Define grid helpers here: NOTE: prefixed with g-
+
+// outer container
+.g-outer-container {
+    width: 100%;
+    // @include debug-bars();
+}
+
+// content container
+.g-content-container {
+    @include outer-container();
+    // @include debug-bars();
+}
+
+// rows
+.g-row {
+    @include row();
+    margin-bottom: rem(30);
+}
+
+// Omega Helper
+.g-omega {
+    @include omega();
+}
+// primary column
+.g-primary {}
+
+// secondary column
+.g-secondary {}
