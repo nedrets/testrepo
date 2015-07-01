@@ -1,18 +1,18 @@
 // yourclientname.scss
 // This is your main .scss file, only use "@imports" here.
 
-// TODO: Besure to replace "yourclientname" both in the below imports
-// and in the "yourclientname" folder located with the "scss" folder
+// TODO: Don't forget to change the placholder, "yourclientname", in the imports below
+// and the "yourclientname" folder located in the "scss" folder.
 
-// CodeKit and Vendor Imports
+// codekit and vendor imports
 @import "bourbon";
 @import "vendor/grid-settings";
 @import "neat";
 @import "vendor/normalize";
 
-// Custom Vendor Overrides
+// custom vendor overrides
 
-// Base Imports
+// base imports
 @import "yourclientname/base/colors";
 @import "yourclientname/base/mixins";
 @import "yourclientname/base/icons";
@@ -20,14 +20,14 @@
 @import "yourclientname/base/general";
 @import "yourclientname/base/forms";
 
-// Helper Imports
+// helper imports
 @import "yourclientname/helpers/class-helpers";
 @import "yourclientname/helpers/grid-helpers";
 @import "yourclientname/helpers/layout-helpers";
 
-// Component Imports
+// component imports
+@import "yourclientname/components/01-media-object/media-object";
 
+// pages
 
-// Pages
-
-// Print Styles
+// print styles

@@ -1,1 +1,1 @@
-This folder contains your test driven Javascript files.
+This folder contains your test driven ```.js``` files.

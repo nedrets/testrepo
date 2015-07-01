@@ -1,12 +1,11 @@
 // layout-helpers.scss
-// Define layout helpers here: NOTE: prefixed with l-
+// Define layout helpers here - NOTE: prefixed with 'l-'
 
 // full width
 .l-full {
     width: 100%;
 }
 
-// floats
 // float left
 .l-pull-left {
     float: left;
@@ -21,56 +20,57 @@
     margin-left: rem(20);
 }
 
-// positioning
-// inspired from http://howtocenterincss.com/
+// positioning - inspired by http://howtocenterincss.com/
 // NOTE: most use flexbox - be sure to check browser reqs: http://caniuse.com/#feat=flexbox.
-// most below classes are for parent elements. children must have 'flex' property set
+// most below classes are for parent elements. children must have 'flex' property set.
 
-// both horizontally and vertically centered
+// horizontal and vertical alignment: center
 .l-centered {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-// horizontally: left, vertically: centered
+// horizontal alignment: left, vertical alignment: center
 .l-left-centered {
     display: flex;
     align-items: center;
 }
 
-// horizontally: left, vertically: bottom
+// horizontal alignment: left, vertical alignment: bottom
 .l-left-bottom {
     display: flex;
     align-items: flex-end;
 }
 
-// horizontally: centered, vertically: top
+// horizontal alignment: center, vertical alignment: top
 .l-center-top {
     margin-left: auto;
     margin-right: auto;
 }
 
-// horizontally: centered, vertically: bottom
-.l-center-bottom{
+// horizontal alignment: center, vertical alignment: bottom
+.l-center-bottom {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-// horizontally: right, vertically: top
-.l-right-top{
+
+// horizontal alignment: right, vertical alignment: top
+.l-right-top {
     margin-left: auto;
 }
-// horizontally: right, vertically: centered
-.l-right-centered{
+
+// horizontal alignment: right, vertical alignment: centered
+.l-right-centered {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-// horizontally: right, vertically: bottom
-.l-right-bottom{
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
+// horizontal alignment: right, vertical alignment: bottom
+.l-right-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

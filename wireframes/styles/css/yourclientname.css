@@ -1,7 +1,16 @@
+/* 2 */
+/* 3 */
+/* 4 */
+/* 1 */
+/* 2 */
+/* 3 */
+/* 4 */
 html {
   box-sizing: border-box; }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit; }
 
 article,
@@ -49,7 +58,8 @@ a {
   background: transparent; }
   a:focus {
     outline: thin dotted; }
-  a:hover, a:active {
+  a:hover,
+  a:active {
     outline: 0; }
 
 h1 {
@@ -163,8 +173,7 @@ select {
   text-transform: none; }
 
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
@@ -237,13 +246,13 @@ p {
 .component-header {
   margin: 0;
   padding: 0;
-  font-size: 0.8125rem;
-  color: white;
-  text-transform: uppercase;
-  padding: 0.625rem 1.25rem;
   margin-bottom: 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: #bdbdbd;
-  border-top: 6px solid #616161; }
+  border-top: 6px solid #616161;
+  color: white;
+  font-size: 0.8125rem;
+  text-transform: uppercase; }
 
 img,
 object,
@@ -279,24 +288,20 @@ hr {
   border-right: none;
   border-top: none;
   margin: -1px 0 0 0;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {
-  padding: 0.25rem 0.5rem;
   display: inline-block;
+  padding: 0.25rem 0.5rem;
   border: 1px solid #bdbdbd;
-  box-shadow: inset 0 1px 3px #e0e0e0;
   border-radius: 2px;
   vertical-align: middle;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.8125rem;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 3px #e0e0e0; }
 
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover {
@@ -354,11 +359,11 @@ input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hove
 .g-outer-container {
   width: 100%; }
 
-.g-content-container {
+.g-column-container {
   max-width: 62.5em;
   margin-left: auto;
   margin-right: auto; }
-  .g-content-container::after {
+  .g-column-container::after {
     clear: both;
     content: "";
     display: table; }
@@ -421,5 +426,43 @@ input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hove
   display: flex;
   justify-content: flex-end;
   align-items: flex-end; }
+
+.media-object {
+  margin-bottom: 1.875rem; }
+
+.media-object__media {
+  display: inline-block;
+  margin-bottom: 0.625rem; }
+  .media-object__media.l-pull-left .media-object__body,
+  .media-object__media.l-pull-right .media-object__body {
+    overflow: auto; }
+
+.media-object__heading {
+  font-size: 1.125rem; }
+
+.media-object__meta {
+  margin: 0;
+  padding: 0;
+  color: #bdbdbd;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  margin-bottom: 0.625rem; }
+  .media-object__meta li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-left: 0.25rem;
+    margin-bottom: 0.25rem; }
+    .media-object__meta li:first-child {
+      margin-left: 0; }
+      .media-object__meta li:first-child:after {
+        content: '|';
+        padding-left: 0.375rem; }
+    .media-object__meta li.media-object__meta-pubdate,
+    .media-object__meta li.media-object__meta-editor {
+      white-space: nowrap; }
 
 /*# sourceMappingURL=yourclientname.css.map */

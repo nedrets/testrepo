@@ -4,9 +4,7 @@
 // typographic variables
 
 /// '$helvetica' variable overrides bourbon's font-stack variable of the same name
-///
 /// @author thoughtbot
-///
 /// @link https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_font-stacks.scss
 $helvetica: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -15,21 +13,21 @@ $helvetica: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-ser
 /// @link http://hmphry.com/useful-sass-mixins
 ///
 /// @example scss - usage
-///     h1{
+///     h1 {
 ///         @include font(helvetica);
 ///     }
 ///
-///     p{
+///     p {
 ///         @include font(helvetica, bold);
 ///     }
 /// @example css - CSS output
-///    h1{
+///    h1 {
 ///        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 ///        font-weight: 400;
 ///        font-style: normal;
 ///    }
 ///
-///    p{
+///    p {
 ///        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 ///        font-weight: 600;
 ///        font-style: normal;
@@ -43,17 +41,18 @@ $font-stack:
     (group: 'helvetica', id: medium, font: ($helvetica), weight: 500, style: normal),
     (group: 'helvetica', id: bold, font: ($helvetica), weight: 600, style: normal);
 
-@mixin font($group, $id:regular){
-  @each $font in $font-stack{
-    @if($group == map-get($font, group) and $id == map-get($font, id)){
-      font-family: map-get($font, font);
-      font-weight: map-get($font, weight);
-      font-style: map-get($font, style);
+@mixin font($group, $id:regular) {
+    @each $font in $font-stack {
+        @if ($group == map-get($font, group) and $id == map-get($font, id)) {
+            font-family: map-get($font, font);
+            font-weight: map-get($font, weight);
+            font-style: map-get($font, style);
+        }
     }
-  }
 }
 
-// base
+// base styles
+
 body {
     @include font(helvetica);
     font-size: 16px;
@@ -85,11 +84,11 @@ p {
 // component headers
 .component-header {
     @include zero;
-    font-size: rem(13);
-    color: color(wireframe, white);
-    text-transform: uppercase;
-    padding: rem(10) rem(20);
     margin-bottom: rem(20);
+    padding: rem(10) rem(20);
     background-color: color(wireframe, 400);
     border-top: 6px solid color(wireframe, 700);
+    color: color(wireframe, white);
+    font-size: rem(13);
+    text-transform: uppercase;
 }

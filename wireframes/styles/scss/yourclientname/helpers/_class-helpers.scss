@@ -2,13 +2,13 @@
 // Define class helpers here
 // Inspired from Helper Classes from https://html5boilerplate.com/
 
-// hide from both screenreaders and browsers: h5bp.com/u
+// hide from screenreaders and browsers: h5bp.com/u
 .hidden {
     display: none !important;
     visibility: hidden;
 }
 
-// hide only visually, but have it available for screenreaders: h5bp.com/v
+// visually hidden, but still available for screenreaders: h5bp.com/v
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -30,6 +30,7 @@
     position: static;
     width: auto;
 }
+
 // hide visually and from screenreaders, but maintain layout
 .invisible {
     visibility: hidden;
@@ -38,7 +39,8 @@
 // Clearfix: contain floats
 //
 // For modern browsers
-//     1. The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of elements that receive the `clearfix` class.
+//    1. The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in
+//       the document. Otherwise it causes space to appear at the top and bottom of elements that receive the `clearfix` class.
 //    2. The use of `table` rather than `block` is only necessary if using `:before` to contain the top-margins of child elements.
 .clearfix:before,
 .clearfix:after {
@@ -54,7 +56,8 @@
     *zoom: 1;
 }
 
-// element lables NOTE: for use during wireframing only.
+// element lables
+// NOTE: for wireframing use only.
 .label {
     @include zero;
     display: inline-block;
@@ -62,6 +65,6 @@
     font-size: rem(13);
     text-transform: uppercase;
     color: color(wireframe, 500);
-    background: color(wireframe, 100, .75);
+    background: color(wireframe, 100, 0.75);
     border: 1px solid color(wireframe, 100);
 }

@@ -1,5 +1,6 @@
 // general.scss
-// For universal plain tag styles. NOTE: No classes or IDs!
+// Define universal plain tag styles here
+// NOTE: No classes or IDs!
 
 body {
 
@@ -20,6 +21,7 @@ ul {
     margin-top: 0;
     margin-left: rem(60);
     margin-bottom: rem(30);
+
     li {
         margin-bottom: rem(10);
     }
@@ -48,5 +50,5 @@ hr {
     border-right: none;
     border-top: none;
     margin: -1px 0 0 0;
-    @include box-sizing(content-box);
+    box-sizing: content-box;
 }
